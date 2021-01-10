@@ -18,12 +18,14 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "autoprefixer": "^10.2.1",
     "gatsby": "^2.26.1",
     "gatsby-plugin-mdx": "^1.7.1",
     "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-source-filesystem": "^2.8.1",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^2.0.2"
   }
 }
