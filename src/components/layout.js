@@ -9,7 +9,7 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div class="container mx-auto pt-4">
       <header>
         <Link to="/">
           <h3>Barmbeker Nephrologen Gespräche</h3>
