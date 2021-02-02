@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "bng-gatsby",
+    title: "Barmbeker Nephrologen Gespräche",
+    siteUrl: "https://www.nephrologiehamburg.de",
+    description: "Monatliche medizinische Fortbildung aus Hamburg für deutschsprachige Nephrologen",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-postcss",
     "gatsby-plugin-mdx",
     {

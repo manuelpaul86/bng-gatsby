@@ -1,6 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
+/*
+import { Helmet } from "react-helmet"
 
+class Application extends React.Component {
+  render() {
+    return (
+      <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Barmbeker Nephrologen Gespräche</title>
+          <link rel="canonical" href="https://www.nephrologiehamburg.de" />
+        </Helmet>
+      </div>
+    )
+  }
+}
+*/
 const ListLink = props => (
   <li>
     <Link to={props.to}>{props.children}</Link>

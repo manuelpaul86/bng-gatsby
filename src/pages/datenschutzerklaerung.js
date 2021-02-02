@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 export default function Datenschutzerklaerung() {
   return (
     <Layout>
-      <div>
+      <div class="bg-blue-200 w-auto h-auto rounded-full text-center">
         <h1>Datenschutzerklärung</h1>
       </div>
     </Layout>
