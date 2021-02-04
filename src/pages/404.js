@@ -28,24 +28,24 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
+      <title>404 - Seite nicht gefunden</title>
+      <h1 style={headingStyles}>Seite nicht gefunden</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Tut uns leid,{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        we couldn’t find what you were looking for.
+        Die gewünschte Seite konnte leider nicht gefunden werden.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
+            Dieser Text ist nur im Entwicklungsmodus zu sehen.
             <br />
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Zur Startseite</Link>.
       </p>
     </main>
   )

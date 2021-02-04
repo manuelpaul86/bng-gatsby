@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <div class="bg-blue-200 w-auto h-auto rounded-full text-center">
-        <h1>Hello Worlde</h1>
+        <h1>Hello World</h1>
       </div>
     </Layout>
   )
