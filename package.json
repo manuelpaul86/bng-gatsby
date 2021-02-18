@@ -24,6 +24,7 @@
     "gatsby-plugin-postcss": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-source-filesystem": "^2.8.1",
+    "merge": "^2.1.0",
     "postcss": "^8.2.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
