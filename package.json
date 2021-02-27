@@ -29,6 +29,7 @@
     "gatsby-source-filesystem": "^2.8.1",
     "joi": "^17.4.0",
     "merge": "^2.1.0",
+    "node": "^15.8.0",
     "postcss": "^8.2.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
