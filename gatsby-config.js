@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Barmbeker Nephrologen Gespräche",
     siteUrl: "https://www.nephrologiehamburg.de",
-    description: "Monatliche nephrologische Fortbildung aus Hamburg",
+    description: "Nephrologische Fortbildung aus Hamburg",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
