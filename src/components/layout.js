@@ -27,10 +27,10 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div class="container mx-auto">
-      <header>
-      <div class="sticky top-0">
-        <nav class="flex flex-wrap items-center justify-between mt-5 mb-5 bg-gray-50 font-sans">
+    <div class="static m-5">
+    <header>
+      <div class="mb-5">
+        <nav class="flex flex-wrap items-center justify-between bg-gray-200">
           <Link to="/">
             <h3>Barmbeker Nephrologen Gespräche</h3>
           </Link>
@@ -43,16 +43,16 @@ export default function Layout({ children }) {
           </ul>
         </nav>
       </div>
-      </header>
-      {children}
-      <footer>
-        <nav class="flex flex-wrap items-center justify-between mt-5 bg-gray-50">
+    </header>
+    {children}
+    <footer>
+      <nav class="flex flex-wrap items-center justify-between mt-5 bg-gray-50">
         <ul class="flex flex-row">
           <ListLink to="/impressum/">Impressum</ListLink>
           <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
         </ul>
-        </nav>
-      </footer>
+      </nav>
+    </footer>
     </div>
   )
 }
