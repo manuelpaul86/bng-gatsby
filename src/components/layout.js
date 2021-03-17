@@ -29,8 +29,8 @@ export default function Layout({ children }) {
   return (
     <div class="static m-5">
     <header>
-      <div class="mb-5">
-        <nav class="flex flex-wrap items-center justify-between bg-gray-200">
+      <div class="fixed left-5 top-5 shadow-md bg-yellow-50 bg-opacity-75">
+        <nav class="flex flex-wrap items-center justify-between">
           <Link to="/">
             <h3>Barmbeker Nephrologen Gespräche</h3>
           </Link>
@@ -44,7 +44,9 @@ export default function Layout({ children }) {
         </nav>
       </div>
     </header>
+    <div class="pt-10">
     {children}
+    </div>
     <footer>
       <nav class="flex flex-wrap items-center justify-between mt-5 bg-gray-50">
         <ul class="flex flex-row">
