@@ -27,34 +27,36 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div class="static m-5">
-    <header>
-      <div class="fixed left-5 top-5 shadow-md bg-yellow-50 bg-opacity-75">
-        <nav class="flex flex-wrap items-center justify-between">
-          <Link to="/">
-            <h3>Barmbeker Nephrologen Gespräche</h3>
-          </Link>
-          <ul class="flex flex-row">
-            <ListLink to="/">Start</ListLink>
-            <ListLink to="/referenten/">Referenten</ListLink>
-            <ListLink to="/infos/">Infos</ListLink>
-            <ListLink to="/termine/">Termine</ListLink>
-            <ListLink to="/sponsoren/">Sponsoren</ListLink>
-          </ul>
-        </nav>
+    <div>
+      <header>
+        <div class="shadow-md bg-yellow-50 bg-opacity-75">
+          <nav class="items-center justify-between">
+              <Link to="/">
+              <h3>Barmbeker Nephrologen Gespräche</h3>
+              </Link>
+            <ul>
+              <ListLink to="/">Start</ListLink>
+              <ListLink to="/referenten/">Referenten</ListLink>
+              <ListLink to="/infos/">Infos</ListLink>
+              <ListLink to="/termine/">Termine</ListLink>
+              <ListLink to="/sponsoren/">Sponsoren</ListLink>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div>
+        {children}
       </div>
-    </header>
-    <div class="pt-10">
-    {children}
-    </div>
-    <footer>
-      <nav class="flex flex-wrap items-center justify-between mt-5 bg-gray-50">
-        <ul class="flex flex-row">
-          <ListLink to="/impressum/">Impressum</ListLink>
-          <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
-        </ul>
-      </nav>
-    </footer>
+      <footer>
+        <div class="shadow-md bg-yellow-50 bg-opacity-75">
+          <nav class="items-center justify-between">
+            <ul>
+              <ListLink to="/impressum/">Impressum</ListLink>
+              <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </div>
   )
 }
