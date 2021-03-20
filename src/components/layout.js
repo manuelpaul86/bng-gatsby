@@ -49,9 +49,7 @@ export default function Layout({ children }) {
           </nav>
         </div>
       </header>
-      <div>
         {children}
-      </div>
       <footer>
         <div class="bg-yellow-100 pt-5">
           <nav>
