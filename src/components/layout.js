@@ -33,7 +33,7 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div class="container mx-auto">
+    <div class="container min-h-screen mx-auto bg-gray-100 px-6 py-8">
       <header>
         <div class="bg-yellow-100 pt-5">
           <nav class="h-30">
