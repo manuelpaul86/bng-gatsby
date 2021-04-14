@@ -36,7 +36,7 @@ export default function Layout({ children }) {
     <div class="container min-h-screen mx-auto bg-gray-100 px-6 py-8">
       <header>
         <div class="bg-yellow-100 pt-5">
-          <nav class="h-30">
+          <nav id="nav" class="h-30">
             <Link to="/"><img src={logo} alt="Logo Barmbeker Nephrologen Gespraeche" class="inline-block h-16 w-16"/></Link>
             <Link to="/" class="pl-5 text-4xl font-sans font-light tracking-wide align-middle">Barmbeker Nephrologen Gespräche</Link>
             <ul class="h-10 mt-5 text-center">
