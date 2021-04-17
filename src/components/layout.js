@@ -33,13 +33,13 @@ const ListLink = props => (
 
 export default function Layout({ children }) {
   return (
-    <div class="container min-h-screen mx-auto bg-gray-100 px-6 py-8">
+    <div class="w-screen min-h-screen mx-auto bg-gray-400">
       <header>
-        <div class="bg-yellow-100 pt-5">
-          <nav id="nav" class="h-30">
+        <div class="bg-gray-100 py-5 px-5">
+          <nav id="nav" class="">
             <Link to="/"><img src={logo} alt="Logo Barmbeker Nephrologen Gespraeche" class="inline-block h-16 w-16"/></Link>
             <Link to="/" class="pl-5 text-4xl font-sans font-light tracking-wide align-middle">Barmbeker Nephrologen Gespräche</Link>
-            <ul class="h-10 mt-5 text-center">
+            <ul class="mt-5 text-center">
               <ListLink to="/">Start</ListLink>
               <ListLink to="/referenten/">Referenten</ListLink>
               <ListLink to="/infos/">Infos</ListLink>
@@ -51,9 +51,9 @@ export default function Layout({ children }) {
       </header>
         {children}
       <footer>
-        <div class="bg-yellow-100 pt-5">
+        <div class="bg-yellow-100 py-5">
           <nav>
-            <ul class="h-10 text-right align-text-bottom">
+            <ul class="text-right align-text-bottom">
               <ListLink to="/impressum/">Impressum</ListLink>
               <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
             </ul>

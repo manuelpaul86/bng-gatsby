@@ -5,9 +5,7 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {
-      fontSize: ['active', 'visited'],
-    },
+    extend: {},
   },
   plugins: [],
 }
