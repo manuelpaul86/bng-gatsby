@@ -25,7 +25,7 @@ class Application extends React.Component {
 */
 
 const ListLink = props => (
-  <li class="px-2 py-2 cursor-pointer hover:bg-green-300 hover:text-green-700">
+  <li class="pl-2 pr-4 py-2 cursor-pointer hover:bg-green-300 hover:text-green-700">
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
   return (
     <div class="w-screen min-h-screen mx-auto">
       <header>
-        <div class="flex flex-row justify-between items-end bg-gray-50 shadow h-10 md:h-20 font-sans">
+        <div class="flex flex-row flex-wrap justify-between items-end bg-gray-50 shadow min-h-10 md:min-h-20 font-sans">
           <div id="logo" class="flex flex-row flex-none md:self-center px-2 py-2 text-green-700 text-sm font-normal md:text-xl lg:text-3xl xl:text-4xl md:font-semibold">
             <Link to="/">Barmbeker Nephrologen Gespräche</Link>
           </div>
@@ -53,7 +53,7 @@ export default function Layout({ children }) {
         {children}
       </div>
       <footer>
-        <div class="bg-gray-50 h-20">
+        <div class="bg-gray-50 min-h-20">
             <ul class="flex flex-row justify-end text-center text-sm font-thin md:text-xl md:font-thin">
               <ListLink to="/impressum/">Impressum</ListLink>
               <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
