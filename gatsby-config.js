@@ -8,14 +8,25 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-postcss",
     "gatsby-plugin-mdx",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `pages`,
+        path: `./src/pages/`,
       },
-      __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `./src/assets/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,14 +38,14 @@ module.exports = {
         display: `standalone`,
         icon: `src/assets/bng-icon.gif`,
         cache_busting_mode: 'none',
-        theme_color_in_head: false,
+        theme_color_in_head: `false`,
         },
      },
      {
        resolve: 'gatsby-plugin-offline',
        options: {
          workboxConfig: {
-           globPatterns: ['src/assets/bng-icon.gif']
+           globPatterns: ['.src/assets/bng-icon.gif']
          }
        }
      }
