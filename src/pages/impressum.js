@@ -6,8 +6,8 @@ export default function Impressum() {
   return (
     <Layout>
       <div class="">
-        <h1>Impressum</h1>
-        <span>
+        <h2 class="py-2 px-2 text-normal font-medium">Impressum</h2>
+        <p  class="py-2 px-2 text-justify text-normal font-light text-gray-900">
         ## Impressum
 
         #### Angaben gemäß § 5 TMG
@@ -68,7 +68,7 @@ export default function Impressum() {
         Quelle:
         [eRecht24](https://www.e-recht24.de/impressum-generator.html)
 
-        </span>
+        </p>
       </div>
     </Layout>
   )

@@ -6,8 +6,8 @@ export default function Datenschutzerklaerung() {
   return (
     <Layout>
       <div class="">
-        <h1>Datenschutzerklärung</h1>
-        <span>
+        <h2 class="py-2 px-2 text-normal font-medium">Datenschutzerklärung</h2>
+        <p class="py-2 px-2 text-justify text-normal font-light text-gray-900">
         ## Datenschutzerklärung
 
 #### 1. Datenschutz auf einen Blick
@@ -172,7 +172,7 @@ Sie können der Speicherung widersprechen, sofern Ihre Interessen unser berechti
 Quelle:
 [eRecht24](https://www.e-recht24.de)
 
-        </span>
+        </p>
       </div>
     </Layout>
   )
