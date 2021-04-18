@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 export default function Sponsoren() {
   return (
     <Layout>
-      <div class="bg-blue-200 w-auto h-auto text-center">
+      <div class="">
         <h1>Sponsoren</h1>
         <span>
         ## Die Barmbeker Nephrologen Gespräche
