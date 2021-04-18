@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../assets/jubilee-logo-transparent.png"
 
 /*
 import { Helmet } from "react-helmet"
@@ -26,38 +25,37 @@ class Application extends React.Component {
 */
 
 const ListLink = props => (
-  <li class="inline-block pr-5">
+  <li class="px-2 py-2 cursor-pointer">
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
 
 export default function Layout({ children }) {
   return (
-    <div class="w-screen min-h-screen mx-auto bg-gray-400">
+    <div class="w-screen min-h-screen mx-auto">
       <header>
-        <div class="bg-gray-100 py-5 px-5">
-          <nav id="nav" class="">
-            <Link to="/"><img src={logo} alt="Logo Barmbeker Nephrologen Gespraeche" class="inline-block h-16 w-16"/></Link>
-            <Link to="/" class="pl-5 text-4xl font-sans font-light tracking-wide align-middle">Barmbeker Nephrologen Gespräche</Link>
-            <ul class="mt-5 text-center">
-              <ListLink to="/">Start</ListLink>
-              <ListLink to="/referenten/">Referenten</ListLink>
-              <ListLink to="/infos/">Infos</ListLink>
-              <ListLink to="/termine/">Termine</ListLink>
-              <ListLink to="/sponsoren/">Sponsoren</ListLink>
-            </ul>
-          </nav>
+        <div class="flex flex-row justify-between items-end bg-gray-50 h-10 md:h-20 font-sans">
+          <div id="logo" class="flex flex-row flex-none md:self-center px-2 py-2 text-sm font-normal md:text-xl lg:text-3xl xl:text-4xl md:font-semibold">
+            <Link to="/">Barmbeker Nephrologen Gespräche</Link>
+          </div>
+            <nav id="nav">
+              <ul class="flex flex-none text-center text-sm font-thin md:text-xl md:font-thin">
+                <ListLink to="/">Start</ListLink>
+                <ListLink to="/referenten/">Referenten</ListLink>
+                <ListLink to="/infos/">Infos</ListLink>
+                <ListLink to="/termine/">Termine</ListLink>
+                <ListLink to="/sponsoren/">Sponsoren</ListLink>
+              </ul>
+            </nav>
         </div>
       </header>
         {children}
       <footer>
-        <div class="bg-yellow-100 py-5">
-          <nav>
-            <ul class="text-right align-text-bottom">
+        <div class="bg-gray-50 h-20">
+            <ul class="flex flex-row justify-end text-center text-sm font-thin md:text-xl md:font-thin">
               <ListLink to="/impressum/">Impressum</ListLink>
               <ListLink to="/datenschutzerklaerung/">Datenschutzerklärung</ListLink>
             </ul>
-          </nav>
         </div>
       </footer>
     </div>
