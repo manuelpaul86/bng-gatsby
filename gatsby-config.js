@@ -15,23 +15,22 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `pages`,
-        path: `./src/pages/`,
+        path: `src/pages/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `./src/assets/`,
+        name: `pictures`,
+        path: `src/assets/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
-    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Barmbeker Nephrologen Gespräche`,
+        short_name: `BNG`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
