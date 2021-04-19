@@ -15,14 +15,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `pages`,
-        path: `src/pages/`,
+        path: `./src/pages/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pictures`,
-        path: `src/assets/`,
+        name: `data`,
+        path: `./src/assets/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/assets/bng-icon.gif`,
+        icon: `./src/assets/bng-icon.gif`,
         cache_busting_mode: 'none',
         theme_color_in_head: `false`,
         },
@@ -44,7 +44,7 @@ module.exports = {
        resolve: 'gatsby-plugin-offline',
        options: {
          workboxConfig: {
-           globPatterns: ['**/src/assets/*']
+           globPatterns: ['*/assets/*']
          }
        }
      }
