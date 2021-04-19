@@ -44,7 +44,7 @@ module.exports = {
        resolve: 'gatsby-plugin-offline',
        options: {
          workboxConfig: {
-           globPatterns: ['src/assets/bng-icon.gif']
+           globPatterns: ['**/assets/*']
          }
        }
      }
