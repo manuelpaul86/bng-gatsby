@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `./src/assets/bng-icon.gif`,
+        icon: `src/assets/bng-icon.gif`,
         cache_busting_mode: 'none',
         theme_color_in_head: `false`,
         },
@@ -43,10 +43,8 @@ module.exports = {
      {
        resolve: 'gatsby-plugin-offline',
        options: {
-         workboxConfig: {
-           globPatterns: ['*/assets/*']
+         precachePages: [`/`,`/termine/`],
          }
-       }
      }
   ],
 };
