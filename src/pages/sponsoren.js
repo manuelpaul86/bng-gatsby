@@ -1,16 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
-const DonatorList = props => (
+const DonatorList = (props) => {
+  return (
   <div class="my-3 hover:bg-yellow-100 shadow-sm hover:shadow-md rounded-lg">
     <h2 class="py-2 px-2 text-normal font-medium">{props.company}</h2>
     <p class="py-2 px-2 text-justify text-normal font-light text-gray-900">{props.amount}</p>
     <p class="py-2 px-2 text-justify text-normal font-light text-gray-900">{props.children}</p>
   </div>
-)
+  )
+}
 
-export default function Sponsoren() {
+const Sponsoren = () => {
   return (
     <Layout>
       <div class="flex flex-col">
@@ -34,3 +35,5 @@ export default function Sponsoren() {
     </Layout>
   )
 }
+
+export default Sponsoren

@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 
-export default function Home() {
+const Home = () => {
   return (
     <Layout>
       <div class="grid grid-cols-4 gap-1">
@@ -44,3 +43,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export default Home

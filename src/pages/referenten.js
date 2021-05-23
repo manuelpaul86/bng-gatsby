@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
-export default function Referenten() {
+const Referenten = () => {
   return (
     <Layout>
       <div class="">
@@ -17,3 +16,5 @@ export default function Referenten() {
     </Layout>
   )
 }
+
+export default Referenten

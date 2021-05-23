@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 
-const AppointmentList = props => (
+const AppointmentList = (props) => {
+return (
   <div class="mb-5 hover:bg-yellow-100 shadow-sm hover:shadow-md rounded-lg">
     <h2 class="py-2 px-2 text-normal font-medium">{props.title}</h2>
     <p class="py-2 px-2 text-justify text-normal font-light text-gray-900">{props.topicOne}</p>
@@ -10,8 +11,9 @@ const AppointmentList = props => (
     <p class="py-2 px-2 text-justify text-normal font-light text-gray-900">{props.children}</p>
   </div>
 )
+}
 
-export default function Termine() {
+const Termine = () => {
   return (
     <Layout>
       <div class="flex flex-col">
@@ -30,3 +32,5 @@ export default function Termine() {
     </Layout>
   )
 }
+
+export default Termine

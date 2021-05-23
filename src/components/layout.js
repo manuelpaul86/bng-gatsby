@@ -1,36 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
-/*
-import { Helmet } from "react-helmet"
-
-class Application extends React.Component {
-  render() {
-    return (
-      <div className="application">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <html lang="de-de" amp />
-          <title>Barmbeker Nephrologen Gespräche</title>
-          <meta name="description" content="Helmet application" />
-          <meta property="og:type" content="article" />
-          <link rel="canonical" href="https://www.nephrologiehamburg.de" />
-          <link rel="apple-touch-icon" href="http://mysite.com/img/apple-touch-icon-57x57.png" />
-          <link rel="apple-touch-icon" sizes="72x72" href="http://mysite.com/img/apple-touch-icon-72x72.png" />
-        </Helmet>
-      </div>
-    )
-  }
-}
-*/
-
-const ListLink = props => (
+const ListLink = (props) => {
+  return (
   <li class="pl-2 pr-4 py-2 cursor-pointer hover:bg-green-300 hover:text-green-700">
     <Link to={props.to}>{props.children}</Link>
   </li>
-)
+  )
+}
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <div class="w-screen min-h-screen mx-auto">
       <header>
@@ -63,3 +42,5 @@ export default function Layout({ children }) {
     </div>
   )
 }
+
+export default Layout

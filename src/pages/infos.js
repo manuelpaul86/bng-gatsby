@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
-export default function Infos() {
+const Infos = () => {
   return (
     <Layout>
       <div class="">
@@ -52,3 +51,5 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
     </Layout>
   )
 }
+
+export default Infos

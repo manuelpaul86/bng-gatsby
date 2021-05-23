@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
-export default function Impressum() {
+const Impressum = () => {
   return (
     <Layout>
       <div class="">
@@ -73,3 +72,5 @@ export default function Impressum() {
     </Layout>
   )
 }
+
+export default Impressum
